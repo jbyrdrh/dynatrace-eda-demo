@@ -1,0 +1,15 @@
+---
+- name: Watching for Problems on Dynatrace
+  hosts: all
+  sources:
+    - dynatrace.event_driven_ansible.dt_esa_api:
+        dt_api_host: "{{ dynatrace_host }}"
+        dt_api_token: "{{ dynatrace_token }}"
+        delay: "{{ dynatrace_delay }}"
+
+  rules:
+    - name: Print the payload when you receive an event
+      condition: event.title is defined
+      actions:
+        - debug:
+            msg: "{{ event }}"

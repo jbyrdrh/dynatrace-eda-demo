@@ -1,1 +1,1 @@
-# dynatrace-eda-demo
+# eda-dynatrace-demo

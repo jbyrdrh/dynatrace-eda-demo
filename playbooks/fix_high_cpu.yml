@@ -1,0 +1,13 @@
+---
+- name: Restart Apache server
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    eda_input: "{{ ansible_eda.event.payload }}"  # access event payload
+
+  tasks:
+
+    - name: Print out the payload
+      ansible.builtin.debug:
+        msg: "{{ eda_input }}"

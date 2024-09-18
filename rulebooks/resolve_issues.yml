@@ -1,0 +1,19 @@
+---
+- name: Watching for Problems on Dynatrace
+  hosts: all
+  sources:
+    - dynatrace.event_driven_ansible.dt_esa_api:
+        dt_api_host: "{{ dynatrace_host }}"
+        dt_api_token: "{{ dynatrace_token }}"
+        delay: "{{ dynatrace_delay }}"
+
+  rules:
+    - name: Problem payload Dynatrace for CPU saturation issue
+      condition: event.title contains "CPU saturation"
+      action:
+        run_job_template:
+          name: Fix_high_cpu
+          organization: Default
+          job_args:
+            extra_vars:
+              my_payload: "{{ event.rootCauseEntity.name }}"

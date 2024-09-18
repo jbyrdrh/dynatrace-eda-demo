@@ -1,0 +1,21 @@
+---
+- name: Watching for Problems on Dynatrace
+  hosts: all
+  sources:
+    - dynatrace.event_driven_ansible.dt_esa_api:
+        dt_api_host: "{{ dynatrace_host }}"
+        dt_api_token: "{{ dynatrace_token }}"
+        delay: "{{ dynatrace_delay }}"
+
+  rules:
+    - name: Problem payload Dynatrace for CPU saturation issue
+      condition: event.title contains "CPU saturation"
+      action:
+        debug:
+          msg: " CPU saturation"
+
+    - name: Problem payload Dynatrace for Memory saturation issue
+      condition: event.title contains "Memory saturation"
+      action:
+        debug:
+          msg: " Memory saturation"
