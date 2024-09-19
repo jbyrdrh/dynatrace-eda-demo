@@ -124,4 +124,7 @@ if __name__ == "__main__":
 ~~~
 
 - On the Dynatrace dashboard, Watch the CPU utilization of your VM reach 100%.
+  ![Screenshot from 2024-09-19 03-32-09](https://github.com/user-attachments/assets/17200abe-f5f1-4b37-990d-ae66977949d1)
+
+  
 - This will send an event sent to the EDA controller which will trigger the action of the rulebook.
