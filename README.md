@@ -30,7 +30,7 @@ Decision environments are a container image to run Ansible rulebooks. (See "Sett
 **Setting up the Event-Driven Ansible environment**
 - This is the [current AAP 2.4 documentation for building an Event-Driven Ansible Decision Environment.](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/event-driven_ansible_controller_user_guide/eda-decision-environments#eda-decision-environments)
 
-This is an example DC definition file that can be used to build the environment:
+This is an example DE definition file that can be used to build the environment:
 
 ~~~
 ---
