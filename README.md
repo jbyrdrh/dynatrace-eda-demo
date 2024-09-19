@@ -3,7 +3,7 @@
 **Prerequisites:**
 - In order to set up this lab, you will have to build a decision environment for the Event-Driven Ansible controller.
 Decision environments are a container image to run Ansible rulebooks.
-- This is the [current AAP 2.4 documentation](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/event-driven_ansible_controller_user_guide/eda-decision-environments#eda-decision-environments) for building an Event-Driven Ansible Decision Environment.
+- This is the [current AAP 2.4 documentation for building an Event-Driven Ansible Decision Environment.](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/event-driven_ansible_controller_user_guide/eda-decision-environments#eda-decision-environments)
 - [Dynatrace OneAgent](https://www.dynatrace.com/platform/oneagent/) deployed on a VM to serve as the managed node.
 
 **Environment overview**
@@ -26,4 +26,7 @@ Decision environments are a container image to run Ansible rulebooks.
   - Give your token an arbitrary name
   - Give your token the following permissions:
     - (API v2 scopes) Ingest events, Read events, Read problems, Write problems, Read security problems
-    - (API v1 scopes) Access problem and event feed, metrics, and topology, Read configuration, and Write configuration 
+    - (API v1 scopes) Access problem and event feed, metrics, and topology, Read configuration, and Write configuration
+
+**Setting up the Event-Driven Ansible environment**
+
