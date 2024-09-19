@@ -96,7 +96,7 @@ Example rulebook:
           msg: " Memory saturation"
 ~~~
 
-- The following python script will trigger 100% CPU utilization
+- The following python script, **eat_cpu.py**, will trigger 100% CPU utilization
 
 ~~~
 #!/usr/bin/env python3
