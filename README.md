@@ -27,15 +27,18 @@ Decision environments are a container image to run Ansible rulebooks. (See "Sett
   
   ![Screenshot from 2024-09-19 03-28-20](https://github.com/user-attachments/assets/901aaedf-2326-40ae-b8c9-a98dbeececd9)
 
-  - Choose **Create token**
+  - Choose **Create token** on this installation page.
   - Copy and paste the installation commands into the Linux terminal.
 
-- Next, use the Search function once again to search for "Access Tokens"
-  - On the Access tokens page, choose "Generate new token"
+- Next, use the Search function once again to search for **Access Tokens**
+  - On the Access tokens page, choose **Generate new token**
   - Give your token an arbitrary name
   - Give your token the following permissions:
     - (API v2 scopes) Ingest events, Read events, Read problems, Write problems, Read security problems
     - (API v1 scopes) Access problem and event feed, metrics, and topology, Read configuration, and Write configuration
+
+![Screenshot from 2024-09-19 04-49-17](https://github.com/user-attachments/assets/b8dfefa7-2d76-4a18-ba6d-41515b5169ad)
+
 
 **Setting up the Event-Driven Ansible environment**
 - This is the [current AAP 2.4 documentation for building an Event-Driven Ansible Decision Environment.](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/event-driven_ansible_controller_user_guide/eda-decision-environments#eda-decision-environments)
