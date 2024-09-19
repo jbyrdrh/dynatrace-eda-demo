@@ -15,10 +15,15 @@ Decision environments are a container image to run Ansible rulebooks.
 
 # Dynatrace OneAgent Setup
 - Once you have at least obtained a trial Dynatrace Instance, on the Dynatrace web UI:
-  - Use the Search funtion to search for "Deploy OneAgent"
+  - Use the Search function to search for "Deploy OneAgent"
   - On the "Download Dynatrace OneAgent" screen, choose the appropriate OS installation instructions.
   - In my example, I chose the Linux option.
   - Chose "Create token"
   - Copy and paste the installation commands into the Linux terminal.
 
-- 
+- Next, use the Search function once again to search for "Access Tokens"
+  - On the Access tokens page, choose "Generate new token"
+  - Give your token an arbitrary name
+  - Give your token the following permissions:
+    - (API v2 scopes) Ingest events, Read events, Read problems, Write problems, Read security problems
+    - (API v1 scopes) Access problem and event feed, metrics, and topology, Read configuration, and Write configuration 
