@@ -122,3 +122,6 @@ def run_stress_on_all_cores():
 if __name__ == "__main__":
     run_stress_on_all_cores()
 ~~~
+
+- On the Dynatrace dashboard, Watch the CPU utilization of your VM reach 100%.
+- This will send an event sent to the EDA controller which will trigger the action of the rulebook.
