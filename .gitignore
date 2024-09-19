@@ -1,0 +1,18 @@
+# Ignore the inventory file
+inventory
+
+# Ignore the vars.yml file
+vars.yml
+
+# Ignore the ansible.cfg file
+ansible.cfg
+
+# Ignore the arc.tar.gz file
+arc.tar.gz
+
+# Ignore the collections directory
+collections/
+
+# Ignore the dyna_wboard.tar file
+dyna_wboard.tar
+

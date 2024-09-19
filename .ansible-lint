@@ -1,0 +1,9 @@
+---
+# .ansible-lint
+
+exclude_paths:
+  - .github
+  - hosts
+  - README.md
+  - .ansible-lint
+  - playbooks/work_in_progress.yml
