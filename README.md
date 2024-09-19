@@ -36,7 +36,6 @@ This is an example DE definition file that can be used to build the environment:
 ---
 version: 3
 
-
 dependencies:
   galaxy:
     collections:
@@ -48,10 +47,8 @@ dependencies:
     - gcc [platform:rpm]
     - python39-devel [platform:rpm]
 
-
 options:
   package_manager_path: /usr/bin/microdnf
-
 
 images:
   base_image:
