@@ -1,4 +1,4 @@
-**Dynatrace w/ Event-Driven Ansible Demo**
+# Instructions for Dynatrace w/ Event-Driven Ansible Demo
 
 **Prerequisites:**
 - In order to set up this lab, you will have to build a decision environment for the Event-Driven Ansible controller.
