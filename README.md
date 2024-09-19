@@ -12,3 +12,13 @@ Decision environments are a container image to run Ansible rulebooks.
   - Private Automation Hub
   - Event-Driven Ansible controller
 - There is a 4th RHEL 9 VM serving as the managed node running [Dynatrace OneAgent](https://www.dynatrace.com/platform/oneagent/)
+
+# Dynatrace OneAgent Setup
+- Once you have at least obtained a trial Dynatrace Instance, on the Dynatrace web UI:
+  - Use the Search funtion to search for "Deploy OneAgent"
+  - On the "Download Dynatrace OneAgent" screen, choose the appropriate OS installation instructions.
+  - In my example, I chose the Linux option.
+  - Chose "Create token"
+  - Copy and paste the installation commands into the Linux terminal.
+
+- 
