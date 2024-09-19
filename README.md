@@ -11,4 +11,4 @@ Decision environments are a container image to run Ansible rulebooks.
   - Automation Controller
   - Private Automation Hub
   - Event-Driven Ansible controller
-- There is a 4th RHEL 9.4 system serving as the managed node running [Dynatrace OneAgent](https://www.dynatrace.com/platform/oneagent/)
+- There is a 4th RHEL 9 VM serving as the managed node running [Dynatrace OneAgent](https://www.dynatrace.com/platform/oneagent/)
